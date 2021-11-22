@@ -1,0 +1,4 @@
+outs:
+- md5: 7e51a4a209a16d3a7492a9a89b1a1b0a
+  size: 23422338
+  path: manualwideresnetCIFAR10.pth

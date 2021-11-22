@@ -144,3 +144,4 @@ cython_debug/
 /train_max_entropy_L1.py
 /train_max_entropy_L2.py
 /evaluate_calibration.py
+/manualwideresnetCIFAR10.pth
