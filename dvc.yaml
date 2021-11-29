@@ -1,0 +1,7 @@
+stages:
+  download_data:
+    cmd: scp -r matthew@10.0.0.40:/home/matthew/datasets/MNIST ./datasets/MNIST
+    deps:
+    - remote://myssh/home/matthew/datasets/MNIST
+    outs:
+    - ./datasets/MNIST

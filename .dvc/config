@@ -1,4 +1,13 @@
 [core]
     remote = mlexamples
+[cache]
+    ssh = sshcache
+    dir = /Users/crc/python/sharedcache
+    shared = group
+    type = symlink
 ['remote "mlexamples"']
     url = gdrive://1KnAUlHs375IGNtM1sOePm8iR6rQbKrhB
+['remote "sshcache"']
+    url = ssh://matthew@10.0.0.40/home/matthew/dvccache
+['remote "myssh"']
+    url = ssh://matthew@10.0.0.40
