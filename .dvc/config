@@ -10,4 +10,4 @@
 ['remote "sshcache"']
     url = ssh://matthew@10.0.0.40/home/matthew/dvccache
 ['remote "myssh"']
-    url = ssh://matthew@10.0.0.40
+    url = ssh://matthew@10.0.0.40/home/matthew

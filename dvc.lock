@@ -1,16 +1,5 @@
 schema: '2.0'
 stages:
-  download_mnist_train_img:
-    cmd: scp matthew@10.0.0.40:/home/matthew/datasets/MNIST/raw/train-images-idx3-ubyte.gz
-      ./datasets/MNIST/train-images-idx3-ubyte.gz
-    deps:
-    - path: remote://myssh/home/matthew/datasets/MNIST/raw/train-images-idx3-ubyte.gz
-      md5: f68b3c2dcbeaaa9fbdd348bbdeb94873
-      size: 9912422
-    outs:
-    - path: ./datasets/MNIST/train-images-idx3-ubyte.gz
-      md5: f68b3c2dcbeaaa9fbdd348bbdeb94873
-      size: 9912422
   download_data:
     cmd: scp -r matthew@10.0.0.40:/home/matthew/datasets/MNIST ./datasets/MNIST
     deps:
