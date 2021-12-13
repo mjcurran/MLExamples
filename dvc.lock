@@ -1,9 +1,9 @@
 schema: '2.0'
 stages:
   download_data:
-    cmd: scp -r matthew@10.0.0.40:/home/matthew/datasets/MNIST ./datasets/MNIST
+    cmd: cp -r /Users/crc/python/data/MNIST ./datasets/MNIST
     deps:
-    - path: remote://myssh/home/matthew/datasets/MNIST
+    - path: /Users/crc/python/data/MNIST
       md5: 7e8ecc940d89c4e50be1f0af0b7bfab7.dir
       size: 66550918
       nfiles: 9
@@ -12,3 +12,10 @@ stages:
       md5: 7e8ecc940d89c4e50be1f0af0b7bfab7.dir
       size: 66550918
       nfiles: 9
+  Execute:
+    cmd: "python3 -c \"from src.Execute import Execute; Execute(load=True, name='Execute').run()\"\
+      \ "
+    deps:
+    - path: src/Execute.py
+      md5: f534a363a7e141e12b51ced1447248dd
+      size: 416

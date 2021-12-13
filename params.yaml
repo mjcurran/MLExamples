@@ -1,0 +1,6 @@
+Train:
+  epochs: 3
+  trainer:
+    kwargs: {}
+    module: src.Train
+    name: Trainer

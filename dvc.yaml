@@ -5,3 +5,18 @@ stages:
     - /Users/crc/python/data/MNIST
     outs:
     - ./datasets/MNIST
+  Execute:
+    cmd: "python3 -c \"from src.Execute import Execute; Execute(load=True, name='Execute').run()\"\
+      \ "
+    deps:
+    - src/Execute.py
+  Train:
+    cmd: "python3 -c \"from src.Train import Train; Train(load=True, name='Train').run()\"\
+      \ "
+    deps:
+    - src/Train.py
+    params:
+    - Train
+    outs:
+    - nodes/Train/outs.json
+    - outs/test_scores.json

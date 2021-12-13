@@ -1,0 +1,10 @@
+{
+    "Execute": {},
+    "Train": {
+        "outs": {
+            "resultsfile": {
+                "Path": "outs/test_scores.json"
+            }
+        }
+    }
+}
